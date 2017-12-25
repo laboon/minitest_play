@@ -42,9 +42,12 @@ puts "Your question is #{question}"
 # in Java.
 m = MagicBall::new
 
-# Call the ask method on the MagicBall object m, with argument question
+
+
+# Call the shake and ask methods on the MagicBall object m.
 # Look, Ma, no parentheses!  They are not necessary if you only have
 # one argument and it cannot be parsed any other way.  Generally avoid
 # parentheses unless necessary.
 
+puts m.shake
 puts m.ask question

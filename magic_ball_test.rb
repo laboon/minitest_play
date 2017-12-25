@@ -56,6 +56,12 @@ class MagicBallTest < Minitest::Test
     refute_nil magic_ball
   end
 
+  # Verify that calling the shake method returns "SHAKE SHAKE SHAKE"
+  def test_shake_shake_shake_shake
+    magic_ball = MagicBall::new
+    assert_equal "SHAKE SHAKE SHAKE", magic_ball.shake
+  end
+  
   # assert_includes means "assert that the result exists in the array
   # MagicBall::ANSWERS.
   # You can obtain a constant/class variable using ::, which we have been
@@ -113,6 +119,5 @@ class MagicBallTest < Minitest::Test
       magic_ball.ask("This is not a question")
     end
   end
-
   
 end

@@ -36,6 +36,11 @@ class MagicBall
     ANSWERS.sample
   end
 
+  # A method with no parameters.  It will always return "SHAKE SHAKE SHAKE"
+  def shake
+    "SHAKE SHAKE SHAKE"
+  end
+  
   # All methods after this declaration are private
   # This acts just like Java's private - methods below can be called
   # by other methods in this class, but not externally.
